@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: rgb(255, 255, 255);
+}
+.logo{
+    background: white;
+    width: 15%;
+    display: flex;
+    justify-content: left;
+}
+.brand{
+    font-size: 45px;
+}
+.footer{
+    background: brown;
+}
+.main{
+
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
