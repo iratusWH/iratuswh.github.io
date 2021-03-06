@@ -19,7 +19,7 @@ body{
 
 .background{
     min-height: 100vh;
-    background-image: url(387A8222-1-01.jpeg);
+    background-image: url(LandingPicPC.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -174,7 +174,7 @@ footer{
 @media (max-width:767px){
     .background{
         background-size: auto 100%;
-
+        background-image: url(LandingPicMobile.jpeg);
     }
     .footer__text{
         flex-direction: column;
