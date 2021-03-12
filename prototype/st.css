@@ -5,7 +5,7 @@
     border: 0;
     box-sizing: border-box;
 }
-/*Основные правила*/
+/*Main*/
 html, 
 body{
     height: 100%;
@@ -37,7 +37,8 @@ a{
 a:hover{
     color: grey;
 }
-/*правила блоков*/
+
+/*Header*/
 .header {
     position: fixed;
     width: 100%;
@@ -61,6 +62,7 @@ a:hover{
     padding: 0 10px;
     height: 100%;
 }
+
 .header_body {
     position: relative;
     display: flex;
@@ -88,8 +90,11 @@ a:hover{
 }
 .header_logo{
     z-index: 3;
-    color: white;
-    text-transform: uppercase;
+    flex: 0 0 80px;
+    overflow: hidden;
+}
+.header_logo img{
+    max-width: 100%;
 }
 .content {
     padding: 100px 0 100px 0 ;
@@ -112,17 +117,18 @@ a:hover{
 
 
 .main_text{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 35px;
     margin: 500px 0 50px 0;
 }
 
+
 .text{
     font-weight: 200;
-
+    background-color: rgba(12, 8, 8, 0.15);
 }
 
-
+/*Footer*/
 footer{
     /*position: relative;
     flex: 0 1 auto;
@@ -170,10 +176,10 @@ footer{
     padding: 5px 0 5px 0;
 }
 
-/*правила для разных разрешений*/
+/*Mobile*/
 @media (max-width:767px){
     .background{
-        background-size: auto 100%;
+        background-size: auto 125%;
         background-image: url(LandingPicMobile.jpeg);
     }
     .footer__text{
@@ -252,10 +258,23 @@ footer{
     .header_link{
         font-size: 24px;
     }
+    .header_logo{
+        margin-top: 6px;
+        z-index: 3;
+    }
+    .header_logo img{
+        max-width: 60%;
+    }
     .content{
         padding: 50px 0 300px 0;
     }
-    @media (min-width: 1400px){
-
+    .main_text{
+        line-height: 40px;
+        font-weight: 400;
+        font-size: 35px;
+        margin: 300px 0 50px 0;
     }
+    /* @media (min-width: 1400px){
+
+    } */
 }
