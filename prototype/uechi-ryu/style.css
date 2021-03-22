@@ -17,14 +17,10 @@ body{
     min-height: 100%;
 }
 
-/* .background{
-    min-height: 100vh;
-    background-image: url(LandingPicPC.jpeg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 100%;
-} */
+.background {
+    background-color: rgb(236, 235, 235);
+}
+
 h2{
     font-weight:400;
 }
@@ -97,7 +93,7 @@ a:hover{
     max-width: 100%;
 }
 .content {
-    padding: 100px 0 100px 0 ;
+    padding: 75px 0 100px 0 ;
     height: 100%;
 }
 .content_text {
@@ -116,16 +112,27 @@ a:hover{
 }
 
 .heading {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.heading_fir {
+    text-align:center;
     line-height: 40px;
+    margin-bottom: 15px;
 }
 .heading_sec {
+    text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .masters {
     display: flex;
     height: 100%;
     flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .master {
     display: flex;
@@ -139,15 +146,17 @@ a:hover{
 } */
 
 .main_pic {
-    width:50%;
+    width:75%;
 } 
 
 .main_pic_wrap{
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.master_pic{
-    height: 10%;
+.pic{
+    border: 2px solid;
+    border-color: darkgray;
 }
 
 .master_text {
@@ -196,10 +205,51 @@ footer{
     flex-direction: column;
     
 }
+.general_text{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 .adress{
     padding: 5px 0 5px 0;
 }
+/*Tablets*/
+@media (max-width:1100px){
+    .general_text{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .content{
+        padding-top: 75px;
+    }
+    .master_pic{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        height: auto;
+        width: 400px;
+    }
+    .masters {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .master_text {
+        margin-left: 0;
+    }
+    .master {
+        flex-direction: column;
+    }
+    .pic{
+        text-align: center;
+    }
+    .master_pic_wrap{
+        text-align: center;
+    }
+    .main_pic {
+        width:90%;
+    } 
+}
+
 
 /*Mobile*/
 @media (max-width:767px){
@@ -294,11 +344,24 @@ footer{
         padding: 50px 0 300px 0;
     }
 
+    .general_text{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
     .pic{
         margin-top: 15px;
         margin-bottom: 5px;
+        height: 60%;
+        width: 100%;
     }
-
+    .masters {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .master_text {
+        margin-left: 0;
+    }
     .master {
         flex-direction: column;
     }
