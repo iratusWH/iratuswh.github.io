@@ -18,18 +18,19 @@ body{
 }
 
 .background{
-    
-    background-image: url(/logo_background.jpg);
-    background-repeat: space;
-    background-size: contain;
+    min-height: 100vh;
+    background-image: url(/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
+    height: 100%;
 }
 h2{
     font-weight:400;
 }
 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: lighter;
 }
 
@@ -62,19 +63,12 @@ a:hover{
     height: 100%;
 }
 
-.header__container{
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
 .header_body {
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 .header_burger {
     display: none;
@@ -91,20 +85,19 @@ a:hover{
 .header_link {
     color: white;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
 }
 .header_logo{
     z-index: 3;
     flex: 0 0 80px;
-    margin-top: 4.5px;
     overflow: hidden;
 }
 .header_logo img{
     max-width: 100%;
 }
 .content {
-    padding: 100px 80px 100px 80px ;
+    padding: 100px 0 100px 0 ;
     height: 100%;
 }
 .content_text {
@@ -114,21 +107,47 @@ a:hover{
     flex-direction: column;
     
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 25px;
     position: relative;
     padding: 10px 0 100px 0;
-    
+    color:black;
+    /* text-shadow: 2px 2px 2px rgba(12, 8, 8, 0.952); */
 }
 
-.text{
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.product{
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.prod_img{
+    text-align: center;
+    height: 40%;
+    width: 40%;
+}
+
+.main_text{
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 35px;
+    margin: 500px 0 50px 0;
+}
+
+
+/* .text{
     font-weight: 200;
     background-color: rgba(12, 8, 8, 0.15);
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-}
-
-
+} */
 
 /*Footer*/
 footer{
@@ -142,7 +161,6 @@ footer{
     position: absolute;
 	left: 0;
 	bottom: 0;
-
 }
 
 .footer__text{
@@ -153,8 +171,6 @@ footer{
     margin: 0 auto;
     padding: 0 10px;
     flex-direction: row;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
 .footer_item{
@@ -181,128 +197,11 @@ footer{
     padding: 5px 0 5px 0;
 }
 
-.heading {
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.850);
-    padding-right: 20px;
-    font-size: 40px;
-    text-align: left;
-}
-
-.heading_fir {
-   
-    line-height: 40px;
-    margin-bottom: 15px;
-}
-.heading_sec {
-    
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.masters {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.master {
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    padding-bottom: 15px;
-}
-
-.main_pic {
-    width:100%;
-} 
-
-.main_pic_wrap{
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.general_text{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color:#000000c4;
-}
-
-.pic{
-    border: 2px solid;
-    border-color: rgba(169, 169, 169, 0.068);
-}
-
-.master_text {
-    margin-left: 10px;
-    color:#000000c4;
-}
-
-/*Tablets*/
-@media (max-width:1100px){
-    .background{
-        background-size:contain;
-        background-image: url(/logo_background.jpg);
-        background-repeat: repeat-y;
-    }
-    .general_text{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .main_pic_wrap{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .content{
-        padding-top: 100px;
-    }
-    .master_pic{
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    .masters {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .master_text {
-        margin-left: 0;
-    }
-    .master {
-        flex-direction: column;
-    }
-    .pic{
-        text-align: center;
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
-    .master_pic_wrap{
-        text-align: center;
-        margin-bottom: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .main_pic {
-        width:100%;
-        height: 100%;
-    } 
-    .heading{
-        margin-left: 10px;
-    }
-}
-
 /*Mobile*/
 @media (max-width:767px){
     .background{
-        background-size: contain;
-        background-image: url(/logo_background.jpg);
-        background-repeat: space;
+        background-size: auto 125%;
+        background-image: url(/background.jpg);
     }
     .footer__text{
         flex-direction: column;
@@ -312,8 +211,6 @@ footer{
     }
     .header_body{
         height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     .header_burger{
         display:block;
@@ -383,61 +280,18 @@ footer{
         font-size: 24px;
     }
     .header_logo{
-        margin-top: 5px;
+        margin-top: 6px;
         z-index: 3;
     }
     .header_logo img{
         max-width: 60%;
     }
     .content{
-        padding: 70px 0 300px 0;
+        padding: 50px 0 300px 0;
     }
-    .content_item{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .main_text{
-        word-wrap: break-word;
-        line-height: 40px;
-        font-weight: 400;
-        font-size: 35px;
-        margin: 300px 0 50px 0;
-    }
-
-    .pic{
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    .masters {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .master_text {
-        margin-left: 0;
-    }
-    .master {
+    .products{
         flex-direction: column;
-    }
-
-    .main_pic_wrap{
-        height: 100%;
-
-        text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .footer__text{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .heading{
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 36px;
-        font-size: 36px;
-        margin-bottom: 0px;
+        justify-content: center;
     }
     
 }
