@@ -9,7 +9,8 @@ $(document).ready(function() {
         speed: 300,
         slidesToShow: 1,
         centerMode: true,
-        variableWidth: true
+        swipe: true,
+        variableWithd: true
     });
 });
 
